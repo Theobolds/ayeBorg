@@ -11,19 +11,68 @@ import AVFoundation
 
 class StackViewController: UIViewController {
     
-    var SVGrids = StackViews()
-    
-    
     var player: AVAudioPlayer!
     var soundPlayers = [AVAudioPlayer]()  // Array to hold multiple player for poliphony
+    let gridSpacing: CGFloat = 10.0
+    let borgInstrumentArray = ["HighTom","MedTom","LowTom","RimShot","Clap","CowBell","Kick","Snare","HiHat"]
+    let loopArray = ["1","2","3","4","5","6"]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .black
-        SVGrids.StackViewGrid(rows: 3, columns: 3, rootView: view)
+        PadsStackViewGrid(rows: 3, columns: 3, buttonArray: borgInstrumentArray as NSArray, rootView: view)
+        //PadsStackViewGrid(rows: 1, columns: 6, buttonArray: loopArray as NSArray, rootView: view)
     }
-    
 
+    @objc func onButton(button: CustomButton) {
+           playSound(soundName: (button.titleLabel?.text!)!)
+       }
+       
+    func PadsStackViewGrid(rows: Int, columns: Int, buttonArray: NSArray ,rootView: UIView) {
+          
+          // Initialise StackView
+          let padStackview = UIStackView()
+          padStackview.axis = .vertical
+          padStackview.alignment = .fill
+          padStackview.distribution = .fillEqually
+          padStackview.spacing = gridSpacing
+          
+          for row in 0 ..< rows {
+              let horizSpace = UIStackView()
+              horizSpace.axis = .horizontal
+              horizSpace.alignment = .fill
+              horizSpace.distribution = .fillEqually
+              horizSpace.spacing = gridSpacing
+              
+              for col in 0 ..< columns {
+                  let button = CustomButton()
+                  button.backgroundColor = .systemTeal
+                 
+                  button.showsTouchWhenHighlighted = true
+                  button.layer.cornerRadius = 6
+                  button.setTitle("\(buttonArray[row*columns + col])", for: .normal)
+                  button.addTarget(self, action: #selector(onButton), for: .touchUpInside)
+                  horizSpace.addArrangedSubview(button)
+              }
+              padStackview.addArrangedSubview(horizSpace)
+          }
+          
+          rootView.addSubview(padStackview)
+          
+          // add constraints
+          padStackview.translatesAutoresizingMaskIntoConstraints = false
+          padStackview.topAnchor.constraint(equalTo: rootView.layoutMarginsGuide.topAnchor , constant: gridSpacing).isActive = true
+          padStackview.leftAnchor.constraint(equalTo: rootView.layoutMarginsGuide.leftAnchor, constant: gridSpacing).isActive = true
+          padStackview.rightAnchor.constraint(equalTo: rootView.layoutMarginsGuide.rightAnchor, constant: -gridSpacing).isActive = true
+          padStackview.bottomAnchor.constraint(equalTo: rootView.layoutMarginsGuide.bottomAnchor, constant: -gridSpacing).isActive = true
+          
+      }
+    
+    func LoopsStackViewGrid(rows: Int, columns: Int, rootView: UIView) {
+        
+        
+    }
     
     // Sound player
     func playSound(soundName: String) {

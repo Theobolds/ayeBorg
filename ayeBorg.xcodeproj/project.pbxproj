@@ -9,21 +9,41 @@
 /* Begin PBXBuildFile section */
 		2A7BE67D24254EC30040C77C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7BE67C24254EC30040C77C /* AppDelegate.swift */; };
 		2A7BE67F24254EC30040C77C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7BE67E24254EC30040C77C /* SceneDelegate.swift */; };
-		2A7BE68124254EC30040C77C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7BE68024254EC30040C77C /* ViewController.swift */; };
 		2A7BE68424254EC30040C77C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A7BE68224254EC30040C77C /* Main.storyboard */; };
 		2A7BE68624254EC50040C77C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7BE68524254EC50040C77C /* Assets.xcassets */; };
 		2A7BE68924254EC50040C77C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A7BE68724254EC50040C77C /* LaunchScreen.storyboard */; };
+		2A7BE69A24254EE10040C77C /* HiHat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2A7BE69124254EE10040C77C /* HiHat.wav */; };
+		2A7BE69B24254EE10040C77C /* HighTom.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2A7BE69224254EE10040C77C /* HighTom.wav */; };
+		2A7BE69C24254EE10040C77C /* LowTom.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2A7BE69324254EE10040C77C /* LowTom.wav */; };
+		2A7BE69D24254EE10040C77C /* Kick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2A7BE69424254EE10040C77C /* Kick.wav */; };
+		2A7BE69E24254EE10040C77C /* Snare.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2A7BE69524254EE10040C77C /* Snare.wav */; };
+		2A7BE69F24254EE10040C77C /* Clap.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2A7BE69624254EE10040C77C /* Clap.wav */; };
+		2A7BE6A024254EE10040C77C /* CowBell.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2A7BE69724254EE10040C77C /* CowBell.wav */; };
+		2A7BE6A124254EE10040C77C /* MedTom.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2A7BE69824254EE10040C77C /* MedTom.wav */; };
+		2A7BE6A224254EE10040C77C /* RimShot.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2A7BE69924254EE10040C77C /* RimShot.wav */; };
+		2A7BE6A524254EFA0040C77C /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7BE6A324254EFA0040C77C /* StackViewController.swift */; };
+		2A7BE6A824254F4A0040C77C /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7BE6A724254F4A0040C77C /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2A7BE67924254EC30040C77C /* ayeBorg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ayeBorg.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A7BE67C24254EC30040C77C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A7BE67E24254EC30040C77C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2A7BE68024254EC30040C77C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2A7BE68324254EC30040C77C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2A7BE68524254EC50040C77C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A7BE68824254EC50040C77C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A7BE68A24254EC50040C77C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A7BE69124254EE10040C77C /* HiHat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = HiHat.wav; sourceTree = "<group>"; };
+		2A7BE69224254EE10040C77C /* HighTom.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = HighTom.wav; sourceTree = "<group>"; };
+		2A7BE69324254EE10040C77C /* LowTom.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = LowTom.wav; sourceTree = "<group>"; };
+		2A7BE69424254EE10040C77C /* Kick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Kick.wav; sourceTree = "<group>"; };
+		2A7BE69524254EE10040C77C /* Snare.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Snare.wav; sourceTree = "<group>"; };
+		2A7BE69624254EE10040C77C /* Clap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Clap.wav; sourceTree = "<group>"; };
+		2A7BE69724254EE10040C77C /* CowBell.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = CowBell.wav; sourceTree = "<group>"; };
+		2A7BE69824254EE10040C77C /* MedTom.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = MedTom.wav; sourceTree = "<group>"; };
+		2A7BE69924254EE10040C77C /* RimShot.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = RimShot.wav; sourceTree = "<group>"; };
+		2A7BE6A324254EFA0040C77C /* StackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
+		2A7BE6A724254F4A0040C77C /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +76,33 @@
 		2A7BE67B24254EC30040C77C /* ayeBorg */ = {
 			isa = PBXGroup;
 			children = (
+				2A7BE6A724254F4A0040C77C /* CustomButton.swift */,
 				2A7BE67C24254EC30040C77C /* AppDelegate.swift */,
 				2A7BE67E24254EC30040C77C /* SceneDelegate.swift */,
-				2A7BE68024254EC30040C77C /* ViewController.swift */,
+				2A7BE6A324254EFA0040C77C /* StackViewController.swift */,
+				2A7BE69024254EE10040C77C /* sounds */,
 				2A7BE68224254EC30040C77C /* Main.storyboard */,
 				2A7BE68524254EC50040C77C /* Assets.xcassets */,
 				2A7BE68724254EC50040C77C /* LaunchScreen.storyboard */,
 				2A7BE68A24254EC50040C77C /* Info.plist */,
 			);
 			path = ayeBorg;
+			sourceTree = "<group>";
+		};
+		2A7BE69024254EE10040C77C /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				2A7BE69124254EE10040C77C /* HiHat.wav */,
+				2A7BE69224254EE10040C77C /* HighTom.wav */,
+				2A7BE69324254EE10040C77C /* LowTom.wav */,
+				2A7BE69424254EE10040C77C /* Kick.wav */,
+				2A7BE69524254EE10040C77C /* Snare.wav */,
+				2A7BE69624254EE10040C77C /* Clap.wav */,
+				2A7BE69724254EE10040C77C /* CowBell.wav */,
+				2A7BE69824254EE10040C77C /* MedTom.wav */,
+				2A7BE69924254EE10040C77C /* RimShot.wav */,
+			);
+			path = sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +164,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A7BE68924254EC50040C77C /* LaunchScreen.storyboard in Resources */,
+				2A7BE6A224254EE10040C77C /* RimShot.wav in Resources */,
+				2A7BE6A024254EE10040C77C /* CowBell.wav in Resources */,
 				2A7BE68624254EC50040C77C /* Assets.xcassets in Resources */,
+				2A7BE69B24254EE10040C77C /* HighTom.wav in Resources */,
 				2A7BE68424254EC30040C77C /* Main.storyboard in Resources */,
+				2A7BE69F24254EE10040C77C /* Clap.wav in Resources */,
+				2A7BE69D24254EE10040C77C /* Kick.wav in Resources */,
+				2A7BE69C24254EE10040C77C /* LowTom.wav in Resources */,
+				2A7BE69E24254EE10040C77C /* Snare.wav in Resources */,
+				2A7BE6A124254EE10040C77C /* MedTom.wav in Resources */,
+				2A7BE69A24254EE10040C77C /* HiHat.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +185,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A7BE68124254EC30040C77C /* ViewController.swift in Sources */,
+				2A7BE6A524254EFA0040C77C /* StackViewController.swift in Sources */,
 				2A7BE67D24254EC30040C77C /* AppDelegate.swift in Sources */,
 				2A7BE67F24254EC30040C77C /* SceneDelegate.swift in Sources */,
+				2A7BE6A824254F4A0040C77C /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +335,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L8Z2Q6UBPE;
 				INFOPLIST_FILE = ayeBorg/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +354,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L8Z2Q6UBPE;
 				INFOPLIST_FILE = ayeBorg/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
