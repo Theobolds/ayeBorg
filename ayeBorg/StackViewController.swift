@@ -15,14 +15,12 @@ class StackViewController: UIViewController {
     var soundPlayers = [AVAudioPlayer]()  // Array to hold multiple player for poliphony
     let gridSpacing: CGFloat = 10.0
     let borgInstrumentArray = ["HighTom","MedTom","LowTom","RimShot","Clap","CowBell","Kick","Snare","HiHat"]
-    let loopArray = ["1","2","3","4","5","6"]
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .black
         PadsStackViewGrid(rows: 3, columns: 3, buttonArray: borgInstrumentArray as NSArray, rootView: view)
-        //PadsStackViewGrid(rows: 1, columns: 6, buttonArray: loopArray as NSArray, rootView: view)
     }
 
     @objc func onButton(button: CustomButton) {
@@ -68,11 +66,7 @@ class StackViewController: UIViewController {
           padStackview.bottomAnchor.constraint(equalTo: rootView.layoutMarginsGuide.bottomAnchor, constant: -gridSpacing).isActive = true
           
       }
-    
-    func LoopsStackViewGrid(rows: Int, columns: Int, rootView: UIView) {
-        
-        
-    }
+
     
     // Sound player
     func playSound(soundName: String) {
